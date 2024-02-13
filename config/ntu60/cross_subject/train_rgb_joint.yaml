@@ -23,19 +23,15 @@ train_rgb_feeder_args:
   normalization: False
 
 test_feeder_args:
-#  data_path: ./data/NTURGB_60/xsub/val_data_joint.npy
-#  label_path: ./data/NTURGB_60/xsub/val_label.pkl
-  data_path: ./data/NTURGB_60/xsub/train_data_joint.npy
-  label_path: ./data/NTURGB_60/xsub/train_label.pkl
+  data_path: ./data/NTURGB_60/xsub/val_data_joint.npy
+  label_path: ./data/NTURGB_60/xsub/val_label.pkl
 
 test_rgb_feeder_args:
-#  data_path: ./data/NTURGB_60/xsub/val_data_rgb_joint.npy
-#  label_path: ./data/NTURGB_60/xsub/val_label.pkl
-  data_path: ./data/NTURGB_60/xsub/train_data_rgb_joint.npy
-  label_path: ./data/NTURGB_60/xsub/train_label.pkl
+  data_path: ./data/NTURGB_60/xsub/val_data_rgb_joint.npy
+  label_path: ./data/NTURGB_60/xsub/val_label.pkl
 
 # model
-model: model.ntu60_rgb_agcn.Model
+model: model.ntu60_rgb_MMAGCN.Model
 # weights: ./runs/ntu60_cs_agcn_rgb_joint-9-6670.pt
 model_args:
   num_class: 60
@@ -56,5 +52,5 @@ device: [0, 1]
 batch_size: 2
 test_batch_size: 2
 # num_epoch: 60
-num_epoch: 5
+num_epoch: 60
 nesterov: True

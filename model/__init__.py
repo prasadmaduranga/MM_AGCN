@@ -9,6 +9,8 @@ from . import rgb_lstm_agcn_1_layer_GCN
 from . import rgb_lstm_agcn_10_layer_GCN
 from . import rgb_lstm_agcn_standard_GCN
 from . import ntu60_rgb_agcn_with_cnn_reduction
+from . import smarthome_rgb_MMAGCN
+from . import ntu60_rgb_MMAGCN
 
 from . import ntu60_rgb_agcn
 

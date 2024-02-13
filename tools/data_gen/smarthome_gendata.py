@@ -159,7 +159,7 @@ if __name__ == '__main__':
     # data/smarthome/smarthome_raw/trimmed_video_skeleton
     # parser.add_argument('--data_path', default='./data/smarthome/smarthome_raw/trimmed_video_skeleton/')
 
-    parser.add_argument('--data_path', default='./data/smarthome/smarthome_raw/test/')
+    parser.add_argument('--data_path', default='./data/smarthome/smarthome_raw/')
 
     parser.add_argument('--ignored_sample_path',
                         default=None)
